@@ -37,6 +37,9 @@ export default function MainNav() {
               <li className={navbarStyles.responsiveMenuItems}>
                 <Link href='#' className={navbarStyles.navText}>ABOUT US</Link>
               </li>
+               <li className={navbarStyles.responsiveMenuItems}>
+                <Link href='#' className={navbarStyles.navText}>SIGN OUT</Link>
+              </li>
               <li className='relative'>
                 <a href="">
                   <span className={navbarStyles.cartNumber}>10</span>
@@ -63,7 +66,7 @@ export default function MainNav() {
               <li className={navbarStyles.mobileMenuItem}>
                   <Link href='#' className={navbarStyles.mobileMenuText}>Home</Link>
               </li>
-              <hr />
+              <hr className='my-4' />
               <li className={navbarStyles.mobileMenuItem}>
                   <Link href='#' className={navbarStyles.mobileMenuText}>NIKE</Link>
               </li>
@@ -75,7 +78,7 @@ export default function MainNav() {
               </li>
               <li className={navbarStyles.mobileMenuItem}>
                   <Link href='#' className={navbarStyles.mobileMenuText}>REEBOKS</Link>
-                  <hr />
+                  <hr className='my-4 font'/>
               </li>
               <li className={navbarStyles.mobileMenuItem}>
                   <Link href='#' className={navbarStyles.mobileMenuText}>Contact us</Link>
@@ -84,11 +87,11 @@ export default function MainNav() {
 
               <div className={navbarStyles.mobileBottomItems}>
                 <Link href='#' className={navbarStyles.signinBtn}>
-                    <span className={navbarStyles.btnItems}>Sign in</span>
-                    <AiOutlineArrowRight className={navbarStyles.btnItems}/></Link>
+                  <span className={navbarStyles.btnItems}>Sign in</span>
+                  <AiOutlineArrowRight className={navbarStyles.btnItems}/></Link>
                 <Link href='#' className={navbarStyles.createAcctBtn}>
-                    <span>Create account</span>
-                    <AiOutlineArrowRight />
+                  <span className={navbarStyles.btnItems}>Create account</span>
+                  <AiOutlineArrowRight />
                 </Link>
               </div>
             </div>
@@ -112,8 +115,8 @@ const navbarStyles = {
     mobileMenuItem:'text-end',
     mobileMenuText:'text-[20px] font-reading text-gray-400',
     mobileBottomItems:'px-3',
-    signinBtn:'block w-full h-[58px] flex flex-row justify-between items-center px-3 bg-blue-400 rounded-md',
+    signinBtn:'block w-full h-[58px] flex flex-row justify-between items-center px-3 bg-white text-black font-semibold rounded-md',
     btnItems:'text-xl',
-    createAcctBtn:'',
+    createAcctBtn:'block w-full h-[58px] flex flex-row justify-between items-center px-3 my-3 text-white font-semibold bg-orange-800 rounded-md',
     cartNumber:'text-xs font-bold px-1 bg-yellow-300 text-black rounded-full absolute -right-2'
   }

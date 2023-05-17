@@ -26,7 +26,7 @@ export default function
         </div>
       </div>
 
-      <div className="p-4 md:grid md:grid-cols-4 sm:grid sm:grid-cols-2 gap-4 mx-10 sm:p-4">
+      <div className="p-4 md:grid md:grid-cols-4 sm:grid sm:grid-cols-2 gap-4 mx-10 sm:p-4 mb-32">
         <div className="flex">
           <BsBookmarkCheck className='text-6xl'/>
           <span>
@@ -80,9 +80,9 @@ export default function
 
       <section>
         <div className="md:grid grid-cols-3">
-          <div>
+          <div className="my-3">
             <span className="flex gap-2">
-              <h1 className="text-2xl">Address</h1>
+              <h1 className="text-2xl mb-4">Address</h1>
               <BsFillGeoAltFill className="text-3xl"/>
             </span>
             <p>
@@ -91,10 +91,10 @@ export default function
             </p>
           </div>
 
-          <div>
-            <h1 className="text-2xl">Socials</h1>
+          <div className="my-3">
+            <h1 className="text-2xl mb-4">Socials &rarr;</h1>
             <span>
-              <ul className="flex gap-3">
+              <ul className="flex gap-3 text-4xl text-orange-700">
                 <li><CgInstagram/></li>
                 <li><CgFacebook/></li>
                 <li><CgTwitter/></li>
@@ -103,10 +103,21 @@ export default function
             </span>
           </div>
 
-          <div>
-          <h1 className="text-2xl">Sponsored and Powered by &rarr;</h1>
-          
+          <div className="my-3">
+            <h1 className="text-2xl mb-4">Sponsored and Powered by &rarr;</h1>
+            <span>
+              <ul className="flex md:gap-3">
+                <Image width={80} height={80} src="/images/adidas.svg" alt=""/>
+                
+                <Image width={80} height={80} src="/images/nike-logo.svg" alt=""/>
+                <Image width={80} height={80} src="/images/puma.svg" alt=""/>
+                <Image width={80} height={80} src="/images/reebok.svg" alt=""/>
+              </ul>
+            </span>
+          </div>
         </div>
+        <div className="flex justify-end mx-6">
+          <small>All Rights Reserved @Onlyshoes 2023</small>
         </div>
       </section>
     </>
