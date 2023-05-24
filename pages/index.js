@@ -10,8 +10,7 @@ import { CgFacebook, CgInstagram, CgTwitter } from 'react-icons/cg';
 
 import React from 'react'
 
-export default function 
-() {
+export default function () {
   return (
     <>
       <MainNav/>
@@ -26,33 +25,33 @@ export default function
         </div>
       </div>
 
-      <div className="p-4 md:grid md:grid-cols-4 sm:grid sm:grid-cols-2 gap-4 mx-10 sm:p-4 mb-32">
-        <div className="flex">
-          <BsBookmarkCheck className='text-6xl'/>
+      <div className="flex flex-row justify-center lg:gap-7 p-4 mb-32">
+        <div className="flex sm:items-center">
+          <BsBookmarkCheck className='lg:text-6xl'/>
           <span>
-            <h6 className="font-bold">High Quality</h6>
-            <small className="text-lg">crafted from top materials</small>
+            <h6 className="lg:font-bold">High Quality</h6>
+            <small className="lg:text-lg">crafted from top materials</small>
           </span>
         </div>
         <div className="flex">
-          <BsClipboardCheck className='text-6xl'/>
+          <BsClipboardCheck className='lg:text-6xl'/>
           <span>
-            <h6 className="font-bold">Warranty Protection</h6>
-            <small className="text-lg">Over 2 Years</small>
+            <h6 className="lg:font-bold">Warranty Protection</h6>
+            <small className="lg:text-lg">Over 2 Years</small>
           </span>
         </div>
         <div className="flex">
-          <BsTruck className='text-6xl'/>
+          <BsTruck className='lg:text-6xl'/>
           <span>
-            <h6 className="font-bold">Free Shipping</h6>
-            <small className="text-lg"> Order over $300</small>
+            <h6 className="lg:font-bold">Free Shipping</h6>
+            <small className="lg:text-lg"> Order over $300</small>
           </span>
         </div>
         <div className="flex">
-          <BsBookmarkCheck className='text-6xl'/>
+          <BsBookmarkCheck className='lg:text-6xl'/>
           <span>
-            <h6 className="font-bold">24 / 7 Support</h6>
-            <small className="text-lg">Dedicated Support</small>
+            <h6 className="lg:font-bold">24 / 7 Support</h6>
+            <small className="lg:text-lg">Dedicated Support</small>
           </span>
         </div>
       </div>
@@ -79,7 +78,7 @@ export default function
       </section>
 
       <section>
-        <div className="md:grid grid-cols-3">
+        <div className="md:grid grid-cols-3 mx-3">
           <div className="my-3">
             <span className="flex gap-2">
               <h1 className="text-2xl mb-4">Address</h1>
