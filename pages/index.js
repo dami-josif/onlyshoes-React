@@ -10,7 +10,8 @@ import { CgFacebook, CgInstagram, CgTwitter } from 'react-icons/cg';
 
 import React from 'react'
 
-export default function () {
+export default function 
+() {
   return (
     <>
       <MainNav/>
@@ -25,33 +26,33 @@ export default function () {
         </div>
       </div>
 
-      <div className="flex flex-row justify-center lg:gap-7 p-4 mb-32">
-        <div className="flex sm:items-center">
-          <BsBookmarkCheck className='lg:text-6xl'/>
+      <div className="grid grid-cols-2 gap-6 md:flex justify-between w-4/5 mx-auto md:w-auto md:px-10 lg:px-36 my-20 md:my-32">
+        <div className="flex">
+          <BsBookmarkCheck className='text-6xl'/>
           <span>
-            <h6 className="lg:font-bold">High Quality</h6>
-            <small className="lg:text-lg">crafted from top materials</small>
+            <h6 className="font-bold">High Quality</h6>
+            <small className="text-lg">crafted from top materials</small>
           </span>
         </div>
         <div className="flex">
-          <BsClipboardCheck className='lg:text-6xl'/>
+          <BsClipboardCheck className='text-6xl'/>
           <span>
-            <h6 className="lg:font-bold">Warranty Protection</h6>
-            <small className="lg:text-lg">Over 2 Years</small>
+            <h6 className="font-bold">Warranty Protection</h6>
+            <small className="text-lg">Over 2 Years</small>
           </span>
         </div>
         <div className="flex">
-          <BsTruck className='lg:text-6xl'/>
+          <BsTruck className='text-6xl'/>
           <span>
-            <h6 className="lg:font-bold">Free Shipping</h6>
-            <small className="lg:text-lg"> Order over $300</small>
+            <h6 className="font-bold">Free Shipping</h6>
+            <small className="text-lg"> Order over $300</small>
           </span>
         </div>
         <div className="flex">
-          <BsBookmarkCheck className='lg:text-6xl'/>
+          <BsBookmarkCheck className='text-6xl'/>
           <span>
-            <h6 className="lg:font-bold">24 / 7 Support</h6>
-            <small className="lg:text-lg">Dedicated Support</small>
+            <h6 className="font-bold">24 / 7 Support</h6>
+            <small className="text-lg">Dedicated Support</small>
           </span>
         </div>
       </div>
@@ -68,7 +69,7 @@ export default function () {
 
       <section>
         <div className="md:mb-52">
-          <div className="grid md:mb-28">
+          <div className="grid mb-28">
             <a className="justify-self-end mt-5 sm:mr-10" href="">
               <button className="px-12 py-5 text-2xl font-bold bg-black text-stone-200 rounded">CHECK STORE &rarr;</button>
             </a>
@@ -78,8 +79,8 @@ export default function () {
       </section>
 
       <section>
-        <div className="md:grid grid-cols-3 mx-3">
-          <div className="my-3">
+        <div className="md:grid grid-cols-3 mt-5">
+          <div className="my-3 mb-7">
             <span className="flex gap-2">
               <h1 className="text-2xl mb-4">Address</h1>
               <BsFillGeoAltFill className="text-3xl"/>
@@ -90,7 +91,7 @@ export default function () {
             </p>
           </div>
 
-          <div className="my-3">
+          <div className="my-3 mb-7">
             <h1 className="text-2xl mb-4">Socials &rarr;</h1>
             <span>
               <ul className="flex gap-3 text-4xl text-orange-700">
@@ -102,7 +103,7 @@ export default function () {
             </span>
           </div>
 
-          <div className="my-3">
+          <div className="my-3 mb-7">
             <h1 className="text-2xl mb-4">Sponsored and Powered by &rarr;</h1>
             <span>
               <ul className="flex md:gap-3">
@@ -125,7 +126,7 @@ export default function () {
 
 const divvv = {
   image:'relative',
-  moves:'sm:absolute lg:w-2/5 lg:top-60 lg:left-40 bg-white opacity-90 px-16 py-10 mt-2',
+  moves:'sm:absolute top-1/3 left-0 sm:left-10 md:left-32 md:top-20 w-full sm:w-1/2 md:w-3/5 lg:w-4/12 p-4 sm:p-8 bg-background header-text bg-white opacity-90 px-16 py-10 lg:mt-40',
   head:'font-bold py-3',
   word:'py-3',
   anchor:'py-2 px-7 mt-0 flex justify-center bg-blue-500 text-lg font-bold text-white'
