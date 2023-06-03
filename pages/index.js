@@ -4,11 +4,10 @@ import { BsBookmarkCheck } from 'react-icons/bs';
 import { BsClipboardCheck } from 'react-icons/bs';
 import { BsTruck } from 'react-icons/bs';
 import { BsFillArrowDownRightSquareFill } from 'react-icons/bs';
-import { BsFillGeoAltFill, BsWhatsapp } from 'react-icons/bs';
-import { CgFacebook, CgInstagram, CgTwitter } from 'react-icons/cg';
 
 
 import React from 'react'
+import Footer from "@/components/Footer";
 
 export default function 
 () {
@@ -27,38 +26,38 @@ export default function
       </div>
 
       <div className="grid grid-cols-2 gap-6 md:flex justify-between w-4/5 mx-auto md:w-auto md:px-10 lg:px-36 my-20 md:my-32">
-        <div className="flex">
-          <BsBookmarkCheck className='text-6xl'/>
+        <div className="flex items-center">
+          <BsBookmarkCheck className='lg:text-5xl text-6xl pr-2'/>
           <span>
-            <h6 className="font-bold">High Quality</h6>
-            <small className="text-lg">crafted from top materials</small>
+            <h6 className="font-semibold">High Quality</h6>
+            <small className="text-md">crafted from top materials</small>
           </span>
         </div>
-        <div className="flex">
-          <BsClipboardCheck className='text-6xl'/>
+        <div className="flex items-center">
+          <BsClipboardCheck className='lg:text-5xl text-6xl pr-2'/>
           <span>
-            <h6 className="font-bold">Warranty Protection</h6>
-            <small className="text-lg">Over 2 Years</small>
+            <h6 className="font-semibold">Warranty Protection</h6>
+            <small className="text-md">Over 2 Years</small>
           </span>
         </div>
-        <div className="flex">
-          <BsTruck className='text-6xl'/>
+        <div className="flex items-center">
+          <BsTruck className='lg:text-5xl text-6xl pr-2'/>
           <span>
-            <h6 className="font-bold">Free Shipping</h6>
-            <small className="text-lg"> Order over $300</small>
+            <h6 className="font-semibold">Free Shipping</h6>
+            <small className="text-md"> Order over $300</small>
           </span>
         </div>
-        <div className="flex">
-          <BsBookmarkCheck className='text-6xl'/>
+        <div className="flex items-center">
+          <BsBookmarkCheck className='lg:text-5xl text-6xl pr-2'/>
           <span>
-            <h6 className="font-bold">24 / 7 Support</h6>
-            <small className="text-lg">Dedicated Support</small>
+            <h6 className="font-semibold">24 / 7 Support</h6>
+            <small className="text-md">Dedicated Support</small>
           </span>
         </div>
       </div>
 
       <section>
-        <div className="text-center mx-8 mt-5 mb-16">
+        <div className="items-center mx-8 mt-5 mb-16">
           <span className="justify-center flex text-3xl font-bold">
             <h1 className="px-3">OUR GOAL</h1>
             <BsFillArrowDownRightSquareFill/>
@@ -78,48 +77,7 @@ export default function
         </div>
       </section>
 
-      <section>
-        <div className="md:grid grid-cols-3 mt-5">
-          <div className="my-3 mb-7">
-            <span className="flex gap-2">
-              <h1 className="text-2xl mb-4">Address</h1>
-              <BsFillGeoAltFill className="text-3xl"/>
-            </span>
-            <p>
-              1037 Gado Nasko Ave S, #135, Lakeland, <br /> FCT-ABUJA
-              33803 1380 W University <br /> Ave Gainesville, ABJ 32603
-            </p>
-          </div>
-
-          <div className="my-3 mb-7">
-            <h1 className="text-2xl mb-4">Socials &rarr;</h1>
-            <span>
-              <ul className="flex gap-3 text-4xl text-orange-700">
-                <li><CgInstagram/></li>
-                <li><CgFacebook/></li>
-                <li><CgTwitter/></li>
-                <li><BsWhatsapp/></li>
-              </ul>
-            </span>
-          </div>
-
-          <div className="my-3 mb-7">
-            <h1 className="text-2xl mb-4">Sponsored and Powered by &rarr;</h1>
-            <span>
-              <ul className="flex md:gap-3">
-                <Image width={80} height={80} src="/images/adidas.svg" alt=""/>
-                
-                <Image width={80} height={80} src="/images/nike-logo.svg" alt=""/>
-                <Image width={80} height={80} src="/images/puma.svg" alt=""/>
-                <Image width={80} height={80} src="/images/reebok.svg" alt=""/>
-              </ul>
-            </span>
-          </div>
-        </div>
-        <div className="flex justify-end mx-6">
-          <small>All Rights Reserved @Onlyshoes 2023</small>
-        </div>
-      </section>
+      <Footer/>
     </>
   )
 }
