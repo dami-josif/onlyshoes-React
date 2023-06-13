@@ -6,8 +6,8 @@ import { useFormik } from "formik";
 import * as yup from 'yup';
 import MainNav from "@/components/MainNav";
 import Footer from "@/components/Footer";
-// import { auth } from "@/settings/firebase/firebase.setup";
-// import { createUserWithEmailAndPassword,onAuthStateChanged } from "firebase/auth";
+import { auth } from "@/settings/firebase/firebase.setup";
+import { createUserWithEmailAndPassword,onAuthStateChanged } from "firebase/auth";
 
 const passwordRules = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}$/; //regular expression
 
@@ -22,7 +22,7 @@ export default function Signup () {
     // const [screenHeight,setScreenHeight] = useState(0);
     // const { uid,setUid,email,setEmail } = useContext(AppContext);
 
-    // const router = useRouter();
+    const router = useRouter();
 
     // useEffect(() => {
     //     setScreenHeight(window.innerHeight - 60);
@@ -45,7 +45,7 @@ export default function Signup () {
                     setEmail(user.email);
                 });
 
-                router.push('/talents/profile-update')
+                router.push('/')
             })
             .catch(error => console.log(error))
         } 
