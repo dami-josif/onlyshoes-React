@@ -51,7 +51,7 @@ export default function Signin () {
                     setEmail(user.email);
                 })
 
-                router.push('/talents/profile-update')
+                router.push('/shoes')
             })
             .catch(error => console.log(error));
         } 

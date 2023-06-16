@@ -22,7 +22,7 @@ export default function PageNotFound() {
       <main className={styles.container} style={{height:`${screenHeight}px`}}>
         <Image width={300} height={300} src='/images/error-404.png'></Image>
         <h3 className={styles.message}>Sorry, the page does not exist</h3>
-        <p className={styles.action}>Return to <Link className={styles.link} href='/about-us?keyword=react&jobtype=fulltime'>Home</Link></p>
+        <p className={styles.action}>Return to <Link className={styles.link} href='/?keyword=homepage'>Home</Link></p>
       </main>
     </>
   )
