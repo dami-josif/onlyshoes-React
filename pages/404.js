@@ -20,7 +20,7 @@ export default function PageNotFound() {
         <link rel="icon" href="/realfast_logo.png" />
       </Head>
       <main className={styles.container} style={{height:`${screenHeight}px`}}>
-        <Image width={300} height={300} src='/images/error-404.png'></Image>
+        <Image width={700} height={700} src='/images/404.svg'></Image>
         <h3 className={styles.message}>Sorry, the page does not exist</h3>
         <p className={styles.action}>Return to <Link className={styles.link} href='/?keyword=homepage'>Home</Link></p>
       </main>
@@ -30,7 +30,7 @@ export default function PageNotFound() {
 
 const styles={
     container:'w-full flex flex-col justify-center items-center px-16',
-    message:'text-lg font-bold my-3',
-    action:'text-md font-bold',
+    message:'text-lg font-bold mt-8',
+    action:'text-md font-bold my-4',
     link:'text-indigo-500 font-bold'
 }
