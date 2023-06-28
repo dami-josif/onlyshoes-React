@@ -49,7 +49,7 @@ export default function Signin () {
                     setEmail(user.email);
                 })
 
-                router.push('/shoes')
+                router.push('/')
             })
             .catch(error => console.log(error));
         } 
