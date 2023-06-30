@@ -13,9 +13,9 @@ import {BsFacebook} from 'react-icons/bs';
 import MainNav from "@/components/MainNav";
 import Footer from "@/components/Footer";
 import {signIn} from 'next-auth/react';
-// import { getServerSession } from "next-auth/next";
+import { getServerSession } from "next-auth/next";
 import { NextAuthOptions } from "./api/auth/[...nextauth]";
-// import { useSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
 
 //create a validation schema (validation rules)
 const fieldsSchema = yup.object().shape({
@@ -143,14 +143,14 @@ export default function Signin () {
 //        if (session.user.accountType == 'talent') {
 //             return {
 //                 redirect:{
-//                     destination:'/talents',
+//                     destination:'/',
 //                     permanent:false,
 //                 }
 //             }
 //        }else if(session.user.accountType == 'org') {
 //             return {
 //                 redirect:{
-//                     destination:'/org',
+//                     destination:'/',
 //                     permanent:false,
 //                 }
 //             }

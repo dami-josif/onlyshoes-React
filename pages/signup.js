@@ -45,7 +45,7 @@ export default function Signup () {
                     setEmail(user.email);
                 });
 
-                router.push('/')
+                router.push('/signin')
             })
             .catch(error => console.log(error))
         } 

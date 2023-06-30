@@ -19,47 +19,47 @@
 //             clientId:process.env.GOOGLE_CLIENT_ID,
 //             clientSecret:process.env.GOOGLE_CLIENT_SECRET
 //         }),
-//         GitHubProvider({
-//         clientId: process.env.GITHUB_CLIENT_ID,
-//         clientSecret: process.env.GITHUB_CLIENT_SECRET
-//         }),
-//         TwitterProvider({
-//             clientId: process.env.TWITTER_CLIENT_ID,
-//             clientSecret: process.env.TWITTER_CLIENT_SECRET
-//         }),
-//         FacebookProvider({
-//             clientId: process.env.FACEBOOK_CLIENT_ID,
-//             clientSecret: process.env.FACEBOOK_CLIENT_SECRET
-//         }),
-//         EmailProvider({
-//             server: process.env.EMAIL_SERVER,
-//             from: process.env.EMAIL_FROM
-//         }),
-//         CredentialsProvider({
-//             name:'Credentails',
-//             credentials:{},
-//             authorize(credentials,req){
-//                 const  {email,password} = credentials;
+//         // GitHubProvider({
+//         // clientId: process.env.GITHUB_CLIENT_ID,
+//         // clientSecret: process.env.GITHUB_CLIENT_SECRET
+//         // }),
+//         // TwitterProvider({
+//         //     clientId: process.env.TWITTER_CLIENT_ID,
+//         //     clientSecret: process.env.TWITTER_CLIENT_SECRET
+//         // }),
+//         // FacebookProvider({
+//         //     clientId: process.env.FACEBOOK_CLIENT_ID,
+//         //     clientSecret: process.env.FACEBOOK_CLIENT_SECRET
+//         // }),
+//         // EmailProvider({
+//         //     server: process.env.EMAIL_SERVER,
+//         //     from: process.env.EMAIL_FROM
+//         // }),
+//         // CredentialsProvider({
+//         //     name:'Credentails',
+//         //     credentials:{},
+//         //     authorize(credentials,req){
+//         //         const  {email,password} = credentials;
 
-//                 //lets say below is an existing user
-//                 const user = {
-//                     username:'you@gmail.com',
-//                     password:'lordos'
-//                 }
+//         //         //lets say below is an existing user
+//         //         const user = {
+//         //             username:'you@gmail.com',
+//         //             password:'lordos'
+//         //         }
 
-//                 //authenticate a user from firebase auth
+//         //         //authenticate a user from firebase auth
 
 
-//                 //if credentials does not match
-//                 if (signInWithEmailAndPassword(auth,email,password)) {
-//                     return user;
-//                 }
+//         //         //if credentials does not match
+//         //         if (signInWithEmailAndPassword(auth,email,password)) {
+//         //             return user;
+//         //         }
 
-//                 // check if credentials match file on record
-//                 // then return user
-//                 return null;
-//             }
-//         })
+//         //         // check if credentials match file on record
+//         //         // then return user
+//         //         return null;
+//         //     }
+//         // })
 //     ],
 //     pages:{
 //         signIn:'/signin',
