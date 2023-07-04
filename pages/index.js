@@ -2,6 +2,7 @@ import MainNav from "@/components/MainNav";
 import Image from "next/image";
 import React from 'react'
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export default function 
 () {
@@ -17,6 +18,11 @@ export default function
             <a href="#" className={divvv.anchor}>
               <button>SHOP NOW</button>
             </a>
+          </div>
+          <div className=" absolute top-80 right-60 ">
+            <button href="#" className="bg-lime-950 opacity-75 text-white font-mono font-bold px-14 py-4 rounded">SIGN IN</button>
+            <p className="text-center font-semibold my-5">OR</p>
+            <button href="#" className="bg-red-950 opacity-75 text-white font-mono font-bold px-14 py-4 rounded">SIGN UP</button>
           </div>
           <p className={divvv.brand}>Please Sign Up or Sign In to check out &rarr; STORE</p>
         </div>
