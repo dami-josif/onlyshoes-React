@@ -20,9 +20,9 @@ export default function
             </a>
           </div>
           <div className="lg:block flex gap-3 absolute lg:top-80 lg:right-60 top-40 right-10">
-            <button href="#" className="bg-lime-950 opacity-75 text-white font-mono lg:font-bold lg:px-14 lg:py-4 px-5 py-1 rounded">SIGN IN</button>
+            <Link href="/signin" className="bg-lime-950 opacity-75 text-white font-mono lg:font-bold lg:px-14 lg:py-4 px-5 py-1 rounded">SIGN IN</Link>
             <p className="text-center font-semibold my-5">OR</p>
-            <button href="#" className="bg-red-950 opacity-75 text-white font-mono lg:font-bold lg:px-14 lg:py-4 px-5 py-1 rounded">SIGN UP</button>
+            <Link href="/signup" className="bg-red-950 opacity-75 text-white font-mono lg:font-bold lg:px-14 lg:py-4 px-5 py-1 rounded">SIGN UP</Link>
           </div>
           <p className={divvv.brand}>Please Sign Up or Sign In to check out &rarr; STORE</p>
         </div>

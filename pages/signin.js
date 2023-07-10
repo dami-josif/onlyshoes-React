@@ -16,6 +16,7 @@ import {signIn} from 'next-auth/react';
 import { getServerSession } from "next-auth/next";
 import { NextAuthOptions } from "./api/auth/[...nextauth]";
 import { useSession } from "next-auth/react";
+import Google from "next-auth/providers/google";
 
 //create a validation schema (validation rules)
 const fieldsSchema = yup.object().shape({
@@ -28,10 +29,6 @@ export default function Signin () {
     // const { uid,setUid,email,setEmail } = useContext(AppContext);
 
     const router = useRouter();
-
-    const handleNextAuthSignin = () =>{
-        signIn('google');
-    }
 
     
 
@@ -123,10 +120,9 @@ export default function Signin () {
                 </form>
                 <p className="text-lg text-center my-2 font-bold">OR, Sign in with</p>
                 <div className={styles.or}>
-                    <button className={styles.signinBtn } onClick={handleNextAuthSignin}><FcGoogle/></button>
-                    <button className={styles.signinBtn } onClick={()=> signIn('github')}><AiFillGithub/></button>
-                    <button className={styles.signinBtn } onClick={()=> signIn('twitter')}><FiTwitter/></button>
-                    <button className={styles.signinBtn } onClick={()=> signIn('facebook')}><BsFacebook/></button>
+                    <button className={styles.signinBtn } onClick={()=> signIn('google')}> <p className="px-3">Google</p> <FcGoogle className="mt-2"/></button>
+                    <button className={styles.signinBtn } onClick={()=> signIn('github')}><p className="px-3">GitHub</p><AiFillGithub className="mt-2"/></button>
+                    <button className={styles.signinBtn } onClick={()=> signIn('twitter')}><p className="px-3">Twitter</p><FiTwitter className="mt-2"/></button>
                 </div>
             </div>
         </main>
@@ -140,14 +136,14 @@ export default function Signin () {
 
 //     //if there is an active session, redirect to talent dashboard
 //     if(session){
-//        if (session.user.accountType == 'talent') {
+//        if (session.user.accountType == 'admin') {
 //             return {
 //                 redirect:{
 //                     destination:'/',
 //                     permanent:false,
 //                 }
 //             }
-//        }else if(session.user.accountType == 'org') {
+//        }else if(session.user.accountType == 'user') {
 //             return {
 //                 redirect:{
 //                     destination:'/',
@@ -175,6 +171,6 @@ const styles = {
     inputField:'w-full block border border-gray-200 py-5 px-4 rounded-full',
     submitBtn:'w-full bg-orange-800 py-5 px-4 rounded-full text-lg font-bold text-white',
     formError:'text-xs',
-    or:'w-full flex flex-row gap-2 text-4xl justify-center mb-5',
-    signinBtn:'w-full px-3 py-4 flex justify-center rounded-full border border-gray-400'
+    or:'w-full text-2xl flex flex-col lg:flex-row gap-3 justify-center mb-5',
+    signinBtn:'lg:px-20 py-2 flex justify-center rounded  border border-gray-900'
 }

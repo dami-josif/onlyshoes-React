@@ -11,6 +11,7 @@ import { useSession,signOut } from 'next-auth/react';
 export default function MainNav() {
     const [showMobileNav,setShowMobileNav] = useState(false);
     // const [showSignOut, setShowSignOut] = useState(true);
+    // const {data:session} = useSession();
 
     const router = useRouter();
     // const currentPage = router.pathname;
@@ -49,7 +50,8 @@ export default function MainNav() {
                 <Link href='#' className={navbarStyles.navText}>ABOUT US</Link>
               </li>
               <li className={navbarStyles.responsiveMenuItems}>
-                <Link href='#' className={navbarStyles.navText}>SIGN OUT</Link>
+                <Link href="#" className={navbarStyles.navText} onClick={()=> handleFirebaseSignout()}>Sign Out</Link>
+                  
               </li>
 
               <li className='relative'>
