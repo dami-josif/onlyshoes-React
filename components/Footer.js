@@ -48,8 +48,8 @@ export default function Footer () {
                         </span>
                     </div>
                 </div>
-                <div className="flex justify-end mx-6">
-                    <small>All Rights Reserved @Onlyshoes {year}</small>
+                <div className="flex justify-end lg:mx-6">
+                    <small>All Rights Reserved @Onlyshoes {year} with ❤ from Dami</small>
                 </div>
             </section>
         </footer>

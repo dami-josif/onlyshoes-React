@@ -126,8 +126,8 @@ const styles = {
     inputBlockRow:'w-full flex flex-col md:flex-row md:gap-3 md:mb-4',
     inputBlock:'w-full mb-4',
     inputBlockMain:'w-full mb-4',
-    label:'text-gray-500 mb-2',
-    inputField:'w-full block border border-gray-200 py-5 px-4 rounded-full',
+    label:'text-gray-700 mb-2',
+    inputField:'w-full block border border-gray-500 py-3 px-4 rounded',
     submitBtn:'w-full bg-orange-800 font-bold py-5 px-4 rounded-full text-lg text-white',
     formError:'text-xs'
 }

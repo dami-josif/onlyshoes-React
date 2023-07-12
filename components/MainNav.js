@@ -11,7 +11,15 @@ import { useSession,signOut } from 'next-auth/react';
 export default function MainNav() {
     const [showMobileNav,setShowMobileNav] = useState(false);
     // const [showSignOut, setShowSignOut] = useState(true);
-    // const {data:session} = useSession();
+    // const {data:session, status} = useSession();
+
+    // if (status === "authenticated") {
+    //   return(
+    //     <div>
+    //       <button onClick={signOut()}>SIGN OUT</button>
+    //     </div>
+    //   )
+    // }
 
     const router = useRouter();
     // const currentPage = router.pathname;
@@ -41,7 +49,7 @@ export default function MainNav() {
 
             <ul className={navbarStyles.navSection}>
               <li className={navbarStyles.responsiveMenuItems}>
-              <Link href='#' className={navbarStyles.navText}>HOME</Link>
+              <Link href='/homepage' className={navbarStyles.navText}>HOME</Link>
               </li>
               <li className={navbarStyles.responsiveMenuItems}>
                 <Link href='#' className={navbarStyles.navText}>CONTACT</Link>
@@ -50,12 +58,12 @@ export default function MainNav() {
                 <Link href='#' className={navbarStyles.navText}>ABOUT US</Link>
               </li>
               <li className={navbarStyles.responsiveMenuItems}>
-                <Link href="#" className={navbarStyles.navText} onClick={()=> handleFirebaseSignout()}>Sign Out</Link>
+                <Link href="/" className={navbarStyles.navText} onClick={()=> handleFirebaseSignout()}>SIGN OUT</Link>
                   
               </li>
 
               <li className='relative'>
-                <a href="">
+                <a href="#">
                   <span className={navbarStyles.cartNumber}>10</span>
                   <BsFillCartFill className='text-white text-3xl'/>
                 </a>
@@ -78,7 +86,7 @@ export default function MainNav() {
             <div className={navbarStyles.halfScreenMenuBlock}>
               <ul className={navbarStyles.mobileMenuItems}>
               <li className={navbarStyles.mobileMenuItem}>
-                  <Link href='#' className={navbarStyles.mobileMenuText}>Home</Link>
+                  <Link href='/' className={navbarStyles.mobileMenuText}>Home</Link>
               </li>
               <hr className='my-4' />
               <li className={navbarStyles.mobileMenuItem}>
@@ -134,7 +142,7 @@ const navbarStyles = {
     navBar:'h-[60px] bg-orange-950 flex flex-row justify-between items-center px-3 shadow-md',
     navSection:'flex flex-row space-x-3',
     brandName:'font-sans text-2xl text-gray-200 font-bold',
-    navText:'text-gray-200 font-bold hover:text-purple-600',
+    navText:'text-gray-200 font-bold hover:text-gray-800',
     responsiveMenuItems:'hidden sm:block',
     menu:'block md:hidden w-[38px] h-[38px] text-gray-500',
     mobileNav:'h-screen w-full bg-gray-200 absolute top-0 left-0 z-10',

@@ -54,7 +54,7 @@ export default function Signin () {
     });
 
     return (
-        <>
+        <div className="bg-gradient-to-r from-gray-300 to-orange-200">
         <Head>
             <title>Sign in | Real Fast</title>
             <meta name="description" content="Sign in to Real Fast and start applying for jobs" />
@@ -64,11 +64,11 @@ export default function Signin () {
         <MainNav/>
         <main className={styles.container}>
             <div className={styles.wrapper}>
-                <h2 className={styles.title}>Sign in to your RealFast account</h2>
+                <h2 className={styles.title}>SIGN IN TO YOUR ONLYSHOES ACCOUNT</h2>
 
                 <form autoComplete="off" onSubmit={handleSubmit}>
                     <div className="flex justify-end">
-                        <p className="text-md text-gray-700 font-bold flex flex-row gap-3" onClick={() => authChoice ? setAuthChoice(false) : setAuthChoice(true)}>
+                        <p className="text-md text-gray-700 font-bold flex flex-row gap-3 mb-3" onClick={() => authChoice ? setAuthChoice(false) : setAuthChoice(true)}>
                             <span>Sign in with {authChoice ? 'credentials' : 'email'}</span>
                             <AiOutlineUndo className="text-gray-800 font-bold text-2xl"/>
                         </p>
@@ -127,38 +127,38 @@ export default function Signin () {
             </div>
         </main>
         <Footer/>
-        </>
+        </div>
     )
 }
 
-// export async function getServerSideProps (context){
-//     // const session = await getServerSession(context.req,context.res,NextAuthOptions);
+export async function getServerSideProps (context){
+    const session = await getServerSession(context.req,context.res,NextAuthOptions);
 
-//     //if there is an active session, redirect to talent dashboard
-//     if(session){
-//        if (session.user.accountType == 'admin') {
-//             return {
-//                 redirect:{
-//                     destination:'/',
-//                     permanent:false,
-//                 }
-//             }
-//        }else if(session.user.accountType == 'user') {
-//             return {
-//                 redirect:{
-//                     destination:'/',
-//                     permanent:false,
-//                 }
-//             }
-//        }
-//     }
+    //if there is an active session, redirect to talent dashboard
+    if(session){
+       if (session.user.accountType == 'admin') {
+            return {
+                redirect:{
+                    destination:'/',
+                    permanent:false,
+                }
+            }
+       }else if(session.user.accountType == 'user') {
+            return {
+                redirect:{
+                    destination:'/',
+                    permanent:false,
+                }
+            }
+       }
+    }
 
-//     return{
-//         props:{
-//             session:JSON.parse(JSON.stringify(session))
-//         }
-//     }
-// }
+    return{
+        props:{
+            session:JSON.parse(JSON.stringify(session))
+        }
+    }
+}
 
 const styles = {
     container:'w-full flex flex-col justify-center items-center px-16 lg:mt-32 lg:mb-40 mt-12 mb-40',
@@ -167,8 +167,8 @@ const styles = {
     inputBlockRow:'w-full flex flex-col md:flex-row md:gap-3 md:mb-4',
     inputBlock:'w-full mb-4',
     inputBlockMain:'w-full mb-4',
-    label:'text-gray-500 mb-2',
-    inputField:'w-full block border border-gray-200 py-5 px-4 rounded-full',
+    label:'text-gray-700 mb-2',
+    inputField:'w-full block border border-gray-500 py-3 px-4 rounded',
     submitBtn:'w-full bg-orange-800 py-5 px-4 rounded-full text-lg font-bold text-white',
     formError:'text-xs',
     or:'w-full text-2xl flex flex-col lg:flex-row gap-3 justify-center mb-5',
