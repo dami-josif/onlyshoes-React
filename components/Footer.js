@@ -27,10 +27,19 @@ export default function Footer () {
                         <h1 className="text-2xl mb-4">Socials &rarr;</h1>
                         <span>
                         <ul className="flex gap-3 text-4xl text-orange-700">
-                            <li><CgInstagram/></li>
-                            <li><CgFacebook/></li>
-                            <li><CgTwitter/></li>
-                            <li><BsWhatsapp/></li>
+                            <a target="_blank" href="https://api.whatsapp.com/send?text=I would like to enquire more on your Shoe Products&phone=+2348147778188">
+                                <li><BsWhatsapp/></li>
+                            </a>
+                            <a href="#">
+                                <li><CgInstagram/></li>
+                            </a>
+                            <a href="#">
+                                <li><CgFacebook/></li>
+                            </a>
+                            <a href="#">
+                                <li><CgTwitter/></li>
+                            </a>
+                            
                         </ul>
                         </span>
                     </div>

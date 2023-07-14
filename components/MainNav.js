@@ -52,7 +52,7 @@ export default function MainNav() {
               <Link href='/homepage' className={navbarStyles.navText}>HOME</Link>
               </li>
               <li className={navbarStyles.responsiveMenuItems}>
-                <Link href='#' className={navbarStyles.navText}>CONTACT</Link>
+                <Link href="mailto:realfast606@gmail.com" className={navbarStyles.navText}>CONTACT</Link>
               </li>
               <li className={navbarStyles.responsiveMenuItems}>
                 <Link href='#' className={navbarStyles.navText}>ABOUT US</Link>
@@ -103,7 +103,7 @@ export default function MainNav() {
                   <hr className='my-4 font'/>
               </li>
               <li className={navbarStyles.mobileMenuItem}>
-                  <Link href='#' className={navbarStyles.mobileMenuText}>Contact us</Link>
+                  <Link href="mailto:realfast606@gmail.com" className={navbarStyles.mobileMenuText}>Contact us</Link>
               </li>
               </ul>
                 
