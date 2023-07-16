@@ -142,7 +142,7 @@ const navbarStyles = {
     navBar:'h-[60px] bg-orange-950 flex flex-row justify-between items-center px-3 shadow-md',
     navSection:'flex flex-row space-x-3',
     brandName:'font-sans text-2xl text-gray-200 font-bold',
-    navText:'text-gray-200 font-bold hover:text-gray-800',
+    navText:'text-gray-200 font-bold hover:text-orange-200',
     responsiveMenuItems:'hidden sm:block',
     menu:'block md:hidden w-[38px] h-[38px] text-gray-500',
     mobileNav:'h-screen w-full bg-gray-200 absolute top-0 left-0 z-10',

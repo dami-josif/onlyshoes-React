@@ -9,7 +9,6 @@ import { signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 import {FcGoogle} from 'react-icons/fc';
 import {AiFillGithub,AiOutlineUndo} from 'react-icons/ai';
 import {FiTwitter} from 'react-icons/fi';
-import {BsFacebook} from 'react-icons/bs';
 import MainNav from "@/components/MainNav";
 import Footer from "@/components/Footer";
 import {signIn} from 'next-auth/react';
