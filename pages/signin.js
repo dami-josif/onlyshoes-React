@@ -13,7 +13,7 @@ import MainNav from "@/components/MainNav";
 import Footer from "@/components/Footer";
 import {signIn} from 'next-auth/react';
 // import { getServerSession } from "next-auth/next";
-// import { NextAuthOptions } from "./api/auth/[...nextauth]";
+import { NextAuthOptions } from "./api/auth/[...nextauth]";
 // import { useSession } from "next-auth/react";
 
 //create a validation schema (validation rules)
@@ -129,34 +129,34 @@ export default function Signin () {
     )
 }
 
-// export async function getServerSideProps (context){
-//     const session = await getServerSession(context.req,context.res,NextAuthOptions);
+export async function getServerSideProps (context){
+    const session = await getServerSession(context.req,context.res,NextAuthOptions);
 
-//     //if there is an active session, redirect to talent dashboard
-//     if(session){
-//        if (session.user.accountType == 'admin') {
-//             return {
-//                 redirect:{
-//                     destination:'/',
-//                     permanent:false,
-//                 }
-//             }
-//        }else if(session.user.accountType == 'user') {
-//             return {
-//                 redirect:{
-//                     destination:'/',
-//                     permanent:false,
-//                 }
-//             }
-//        }
-//     }
+    //if there is an active session, redirect to talent dashboard
+    if(session){
+       if (session.user.accountType == 'admin') {
+            return {
+                redirect:{
+                    destination:'/',
+                    permanent:false,
+                }
+            }
+       }else if(session.user.accountType == 'user') {
+            return {
+                redirect:{
+                    destination:'/',
+                    permanent:false,
+                }
+            }
+       }
+    }
 
-//     return{
-//         props:{
-//             session:JSON.parse(JSON.stringify(session))
-//         }
-//     }
-// }
+    return{
+        props:{
+            session:JSON.parse(JSON.stringify(session))
+        }
+    }
+}
 
 const styles = {
     container:'w-full flex flex-col justify-center items-center px-16 lg:mt-32 lg:mb-40 mt-12 mb-40',
