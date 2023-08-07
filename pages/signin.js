@@ -12,7 +12,7 @@ import {FiTwitter} from 'react-icons/fi';
 import MainNav from "@/components/MainNav";
 import Footer from "@/components/Footer";
 import {signIn} from 'next-auth/react';
-// import { getServerSession } from "next-auth/next";
+import { getServerSession } from "next-auth/next";
 import { NextAuthOptions } from "./api/auth/[...nextauth]";
 // import { useSession } from "next-auth/react";
 
