@@ -53,7 +53,7 @@ export default function Signin () {
     });
 
     return (
-        <div className="">
+        <div>
         <Head>
             <title>Sign in | Real Fast</title>
             <meta name="description" content="Sign in to Real Fast and start applying for jobs" />
@@ -63,8 +63,8 @@ export default function Signin () {
         <MainNav/>
         <main className={styles.container}>
             <h2 className={styles.title}>SIGN IN TO YOUR ONLYSHOES ACCOUNT</h2>
-            <div className="lg:flex gap-3">
-                <Image width={800} height={1700} src="/images/pageimage.jpg" alt=""/>
+            <div className="lg:flex gap-2">
+                <Image width={700} height={1700} src="/images/pageimage.jpg" alt=""/>
                 <div className={styles.wrapper}>
 
                     <form autoComplete="off" onSubmit={handleSubmit}>
@@ -117,9 +117,9 @@ export default function Signin () {
                             }else{
                                 signIn('credentials',{email:values.email,password:values.password,redirect:false})
                             }
-                        }}>Sign In</button>
+                        }}>SIGN IN</button>
                     </form>
-                    <p className="text-lg text-center my-2 font-bold">OR, Sign in with</p>
+                    <p className="text-lg text-center font-bold">OR, Sign in with</p>
                     <div className={styles.or}>
                         <button className={styles.signinBtn } onClick={()=> signIn('google')}> <p className="px-3">Google</p> <FcGoogle className="mt-2"/></button>
                         <button className={styles.signinBtn } onClick={()=> signIn('github')}><p className="px-3">GitHub</p><AiFillGithub className="mt-2"/></button>
@@ -165,7 +165,7 @@ export default function Signin () {
 const styles = {
     container:'w-full flex flex-col justify-center items-center px-16 lg:mt-16 lg:mb-40 mt-12 mb-40',
     wrapper:'w-100 md:w-[720px] flex flex-col gap-16',
-    title:'font-heading text-xl font-bold text-gray-900 text-center',
+    title:'font-heading text-xl font-bold text-gray-900 text-center mb-10',
     inputBlockRow:'w-full flex flex-col md:flex-row md:gap-3 md:mb-4',
     inputBlock:'w-full mb-4',
     inputBlockMain:'w-full mb-4',
