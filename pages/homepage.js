@@ -73,7 +73,7 @@ export default function
               <button className="px-12 py-5 text-2xl font-bold bg-black text-stone-200 rounded">CHECK STORE &rarr;</button>
             </a>
           </div>
-          <Image className={divvv.image} width={1400} height={5000} src="/images/sample 3.jpg" alt=""/>
+          <Image className={divvv.image} width={1400} height={5000} src="/images/removebg.png" alt=""/>
         </div>
       </section>
 

@@ -53,7 +53,7 @@ export default function Signin () {
     });
 
     return (
-        <div>
+        <div className="bg-gradient-to-r from-gray-50 to-orange-50">
         <Head>
             <title>Sign in | Real Fast</title>
             <meta name="description" content="Sign in to Real Fast and start applying for jobs" />
@@ -64,7 +64,7 @@ export default function Signin () {
         <main className={styles.container}>
             <h2 className={styles.title}>SIGN IN TO YOUR ONLYSHOES ACCOUNT</h2>
             <div className="lg:flex gap-2">
-                <Image width={700} height={1700} src="/images/pageimage.jpg" alt=""/>
+                <Image width={700} height={1700} src="/images/project.png" alt=""/>
                 <div className={styles.wrapper}>
 
                     <form autoComplete="off" onSubmit={handleSubmit}>
